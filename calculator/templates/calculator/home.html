@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CGPA Calculator</title>
+</head>
+<body>
+
+<h1>CGPA Calculator</h1>
+
+<form method="POST" action="/calculate/">
+{% csrf_token %}
+
+Credit 1:
+<input type="number" name="c1"><br><br>
+
+Grade 1:
+<input type="number" name="g1"><br><br>
+
+Credit 2:
+<input type="number" name="c2"><br><br>
+
+Grade 2:
+<input type="number" name="g2"><br><br>
+
+Credit 3:
+<input type="number" name="c3"><br><br>
+
+Grade 3:
+<input type="number" name="g3"><br><br>
+
+<button type="submit">Calculate CGPA</button>
+
+</form>
+
+</body>
+</html>
